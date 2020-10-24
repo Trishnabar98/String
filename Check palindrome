@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX 9999
+
+int main(void) {
+	// your code goes here
+	char s[MAX];
+    int i,len=0,f=0;
+    gets(s);
+    len=strlen(s);
+    for(i=0;i<len/2;i++)
+    {
+       if(s[i]==s[len-i-1])
+       {
+           f++;
+       }
+        
+    }
+    if(f==i)
+        printf("palingdrom_string");
+    else
+        printf("not palingdrom string");
+    
+    
+	return 0;
+}
+
