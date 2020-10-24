@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+#include <string.h>
+int main(void) {
+
+	char s[100];
+	int fr[256]={0};
+	int i;
+	gets(s);
+	for(i=0;s[i]!='\0';i++)
+	{
+	    fr[s[i]]++;
+	}
+	for(i=0;i<256;i++)
+	{
+	    if(fr[i]!=0)
+	    {
+	        printf("%c  %d\n",i,fr[i]);
+	    }
+	}
+	
+	return 0;
+}
+
+
