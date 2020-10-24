@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int i,j=0;
+	char s[100],no_sp[100];
+	gets(s);
+	
+	for(i=0;s[i]!='\0';++i)
+	{
+	   if(!(s[i]==' '))
+	   {
+	       no_sp[j++]=s[i];
+	   }
+	}
+	puts(no_sp);
+	return 0;
+}
+
