@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX 9999
+
+int main(void) {
+	// your code goes here
+	char s[MAX];
+    int i,v=0;
+    gets(s);
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U')
+        {
+            v++;
+        }
+    }
+    printf("%d",v);
+    
+	return 0;
+}
+
